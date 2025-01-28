@@ -50,6 +50,7 @@
             this.skobkaR = new System.Windows.Forms.Button();
             this.square = new System.Windows.Forms.Button();
             this.zero = new System.Windows.Forms.Button();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // num1
@@ -255,8 +256,9 @@
             this.square.Name = "square";
             this.square.Size = new System.Drawing.Size(56, 55);
             this.square.TabIndex = 21;
-            this.square.Text = "²";
+            this.square.Text = "^";
             this.square.UseVisualStyleBackColor = true;
+            this.square.Click += new System.EventHandler(this.square_Click);
             // 
             // zero
             // 
@@ -268,11 +270,21 @@
             this.zero.UseVisualStyleBackColor = true;
             this.zero.Click += new System.EventHandler(this.zero_Click);
             // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(39, 255);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(325, 146);
+            this.textBox2.TabIndex = 23;
+            this.textBox2.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(413, 489);
+            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.zero);
             this.Controls.Add(this.square);
             this.Controls.Add(this.skobkaR);
@@ -326,6 +338,6 @@
         private System.Windows.Forms.Button skobkaR;
         private System.Windows.Forms.Button square;
         private System.Windows.Forms.Button zero;
+        private System.Windows.Forms.TextBox textBox2;
     }
 }
-
